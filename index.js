@@ -6,7 +6,7 @@ module.exports = {
   included: function(app) {
     this._super.included(app);
     app.import(app.bowerDirectory + '/chesslib/browser/chesslib.js', {
-      exports: { chesslib: ['PGN'] }
+      exports: { chesslib: ['PGN', 'brands'] }
     });
   }
 };
